@@ -1,0 +1,39 @@
+
+import { useState, useEffect } from 'react';
+
+function ProfileCard() {
+  const [profile, setProfile] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setProfile({
+        name: 'Simon Ayandele',
+        email: 'simonayandele@gmail.com',
+        city: 'Lagos'
+      });
+
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <section>
+      <h2>Profile Card</h2>
+
+      {loading ? (
+        <p>Loading...</p>
+      ) : (
+        <div>
+          <p>Name: {profile.name}</p>
+          <p>Email: {profile.email}</p>
+          <p>City: {profile.city}</p>
+        </div>
+      )}
+    </section>
+  );
+}
+
+export default ProfileCard;

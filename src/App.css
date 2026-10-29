@@ -1,0 +1,50 @@
+
+.app {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+h1 {
+  text-align: center;
+  color: #1d4ed8;
+}
+
+section {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+input {
+  padding: 10px;
+  margin-right: 8px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 14px;
+  margin: 4px;
+  border: none;
+  border-radius: 5px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+li {
+  margin: 10px 0;
+}
